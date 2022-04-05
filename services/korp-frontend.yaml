@@ -1,0 +1,12 @@
+name: Korp frontend
+run-info:
+    user: fkkorp
+server: fkkorp@k2.spraakdata.gu.se
+path: /var/www/html_sb/korp
+responsibles:
+    - Maria
+repo: https://github.com/spraakbanken/korp-frontend
+notes: This is not a service!
+check:
+    - type: html
+      url: https://spraakbanken.gu.se/korp/
