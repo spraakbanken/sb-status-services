@@ -1,15 +1,15 @@
 name: Korp backend
 run-info:
-	user: fkkorp
+    user: fkkorp
 server: fkkorp@korpsrv.spraakbanken.gu.lcl
 path: ~/korp-backend/v8/
 service: supervisord
 responsibles:
-  - Martin
+    - Martin
 repo: https://github.com/spraakbanken/korp-backend
 sos: https://ws.spraakbanken.gu.se/docs/korp
 notes: Cool service!
 check:
-  - type: url-json
-	  url: https://ws.spraakbanken.gu.se/ws/korp/v8/
-	  json: response["corpora"]
+    - type: url-json
+      url: https://ws.spraakbanken.gu.se/ws/korp/v8/
+      json: response["corpora"]
